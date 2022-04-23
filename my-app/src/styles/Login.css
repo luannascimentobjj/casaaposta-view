@@ -1,0 +1,27 @@
+.container-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100vh;
+}
+
+.box-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 500px;
+  height: 300px;
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 10px rgba(38, 38, 38, 0.242);
+
+  padding-top: 0;
+}
+
+.titulo-login {
+  margin-bottom: 20px;
+}
