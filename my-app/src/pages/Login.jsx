@@ -182,7 +182,7 @@ function Login() {
           </div>
         </div>
       ) : (
-        <Home></Home>
+        <Home />
       )}
     </Container>
   );
