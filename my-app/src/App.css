@@ -3,3 +3,23 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+#follow {
+  position:absolute;
+  transform:translate(-50%,-200%);
+  /* height:35px; */
+  width: auto;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #1D1D1D;
+  color: white;
+}
+
+.td-result {
+  cursor: pointer;
+
+}
+
+.td-result:hover {
+  opacity: .9;
+}

@@ -16,6 +16,7 @@ import "../styles/Login.css";
 import axios from "axios";
 import AuthContext from "../context/AuthProvider";
 import Home from "./Home";
+import {Table} from "./Table";
 
 let accessToken = "";
 let statusCode = "";
@@ -182,7 +183,7 @@ function Login() {
           </div>
         </div>
       ) : (
-        <Home />
+        <Table />
       )}
     </Container>
   );

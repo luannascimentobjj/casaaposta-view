@@ -120,26 +120,48 @@ function Home() {
         <thead>
           <tr>
             <th className="fixed-table-content"></th>
-            {listMinute.map((odd) => {
-              // const teste = listTeste?.sort(function (a:number, b:number) { return a - b})
-              return <th>{odd}</th>;
+            {listMinute.map((minute) => {
+              return <th key={minute} id={minute.toString()}>{minute}</th>;
             })}
           </tr>
 
           <th className="fixed-table-content">HORA</th>
-          {listHour?.map((odd: any) => {
-            // const hora = Number(odd)
-            // console.log('teste', odd.sort(function (a: any, b: any) {  return a - b;  }))
-            
+          {listHour?.map((hour: any) => {
+            const teste = document.getElementById(`${hour}`)?.innerText;
             return (
-              <tr key={odd} id="teste">
-                <th>{odd}:00</th>
+              <tr key={hour}>
+                <th id={hour}>{hour}:00</th>
+                {result?.listaOdds.map(odds => {
+                  // debugger;
+
+                  const teste2 = odds.resultado;
+                  const horaId = document.getElementById(`${hour}`)?.id
+                  return(
+                    <td key={hour} >
+                      {/* {item.timeCasa.substring(0, 3).toUpperCase()}&nbsp;x&nbsp;
+                      {item.timeVisitante.substring(0, 3).toUpperCase()} <br />
+                      {item.resultado} */}
+
+                      {/* Pegar o tamanho da lista e adicionar a quanidade de td, com uma key[hora, min] */}
+
+                      {/* dentro do td, um if verificando o resultado da lista de odds bate com o resutado da key */}
+
+                      {horaId == odds.hora.toString() && (
+                        odds.resultado
+                      )}
+
+                      {/* {(teste == `${odd}:00`) &&
+                        'a'
+                      } */}
+                    </td>
+                  )
+                })}
               </tr>
             );
           })}
         </thead>
 
-        <tbody>
+        {/* <tbody>
           <tr>
             {result?.listaOdds.map((odd) => {
               return (
@@ -151,7 +173,7 @@ function Home() {
               );
             })}
           </tr>
-        </tbody>
+        </tbody> */}
         <tr></tr>
       </table>
     </>
