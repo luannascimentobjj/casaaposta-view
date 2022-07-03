@@ -1,0 +1,27 @@
+th, td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+tr:nth-child(1) {
+  background-color: #dddddd;
+}
+
+td {
+  background: #424242;
+  color: #fff;
+}
+
+.fixed-table-content {
+  background: white;
+  color: #424242;
+}
+
